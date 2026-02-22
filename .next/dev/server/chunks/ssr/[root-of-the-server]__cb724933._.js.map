@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/arort/OneDrive/Desktop/Condo%20Facil/pages/profile.js"],"sourcesContent":["export default function Profile(){\r\n  return(\r\n    <div style={{padding:40}}>\r\n      <h2>Perfil de Usuario</h2>\r\n      <p>Bienvenido al sistema CondoFácil.</p>\r\n      <p>Rol: Administrador</p>\r\n    </div>\r\n  );\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,qKAAC;QAAI,OAAO;YAAC,SAAQ;QAAE;;0BACrB,qKAAC;0BAAG;;;;;;0BACJ,qKAAC;0BAAE;;;;;;0BACH,qKAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
-}
