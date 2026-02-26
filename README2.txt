@@ -1,5 +1,9 @@
  CondoFácil — Sprint 2
 
+Login
+User:admin
+Password: 1234
+
 Proyecto académico desarrollado con metodología Scrum.
 
  Descripción
