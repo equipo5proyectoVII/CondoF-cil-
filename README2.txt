@@ -45,7 +45,6 @@ Completados: 18 SP
  Next.js
  React
  JavaScript
- localStorage (simulación de persistencia)
  Git y GitHub
 
 
