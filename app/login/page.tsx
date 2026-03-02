@@ -164,33 +164,33 @@ export default function LoginPage() {
 
         {/* Formulario */}
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Correo Electrónico
-            </label>
-            <input
-              type="email"
-              value={email}
-              onChange={(ev) => setEmail(ev.target.value)}
-              required
-              placeholder="ejemplo@correo.com"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition outline-none"
-            />
-          </div>
+        <div>
+          <label className="block text-black font-medium mb-2">
+            Correo Electrónico
+          </label>
+          <input
+            type="email"
+            value={email}
+            onChange={(ev) => setEmail(ev.target.value)}
+            required
+            placeholder="ejemplo@correo.com"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition outline-none"
+          />
+        </div>
 
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Contraseña
-            </label>
-            <input
-              type="password"
-              value={password}
-              onChange={(ev) => setPassword(ev.target.value)}
-              required
-              placeholder="••••••••"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition outline-none"
-            />
-          </div>
+        <div>
+          <label className="block text-black font-medium mb-2">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            value={password}
+            onChange={(ev) => setPassword(ev.target.value)}
+            required
+            placeholder="••••••••"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition outline-none"
+          />
+        </div>
 
           <button
             type="submit"
