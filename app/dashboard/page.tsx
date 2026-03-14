@@ -38,6 +38,12 @@ export default function DashboardPage() {
         description: "Saldo, adeudos, pagos aplicados y periodos.",
         icon: "💳",
       },
+      {
+        href: "/incidencias",
+        title: "Reporte de incidencias",
+        description: "Permite a los residentes reportar problemas dentro del condominio.",
+        icon: "⚠️",
+      },
     ],
     []
   );
@@ -109,7 +115,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Nav Cards */}
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -136,7 +142,7 @@ export default function DashboardPage() {
             <p className="text-sm font-semibold text-gray-800 mb-3">
               Navegación rápida
             </p>
-            <nav className="flex flex-col sm:flex-row gap-2">
+            <nav className="flex flex-col sm:flex-row gap-2 flex-wrap">
               {navItems.map((item) => (
                 <Link
                   key={item.href + "-quick"}
