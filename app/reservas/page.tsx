@@ -1,8 +1,14 @@
 "use client";
 import { useState } from "react";
 
+type Reserva = {
+  fecha: string;
+  hora: string;
+  area: string;
+};
+
 export default function Reservas() {
-  const [reservas, setReservas] = useState([]);
+  const [reservas, setReservas] = useState<Reserva[]>([]);
   const [fecha, setFecha] = useState("");
   const [hora, setHora] = useState("");
   const [area, setArea] = useState("");
@@ -13,7 +19,8 @@ export default function Reservas() {
       return;
     }
 
-    const nueva = { fecha, hora, area };
+    const nueva: Reserva = { fecha, hora, area };
+
     setReservas([...reservas, nueva]);
 
     setFecha("");
@@ -25,8 +32,17 @@ export default function Reservas() {
     <div>
       <h1>Módulo de Reservas</h1>
 
-      <input type="date" value={fecha} onChange={(e) => setFecha(e.target.value)} />
-      <input type="time" value={hora} onChange={(e) => setHora(e.target.value)} />
+      <input
+        type="date"
+        value={fecha}
+        onChange={(e) => setFecha(e.target.value)}
+      />
+
+      <input
+        type="time"
+        value={hora}
+        onChange={(e) => setHora(e.target.value)}
+      />
 
       <select value={area} onChange={(e) => setArea(e.target.value)}>
         <option value="">Selecciona área</option>
