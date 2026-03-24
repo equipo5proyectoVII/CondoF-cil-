@@ -44,6 +44,14 @@ export default function DashboardPage() {
         description: "Permite a los residentes reportar problemas dentro del condominio.",
         icon: "⚠️",
       },
+
+      // 🔥 SPRINT 4 - NUEVO MÓDULO
+      {
+        href: "/reservas",
+        title: "Reservas de áreas",
+        description: "Permite gestionar la reserva de espacios comunes.",
+        icon: "📅",
+      },
     ],
     []
   );
