@@ -41,16 +41,25 @@ export default function DashboardPage() {
       {
         href: "/incidencias",
         title: "Reporte de incidencias",
-        description: "Permite a los residentes reportar problemas dentro del condominio.",
+        description:
+          "Permite a los residentes reportar problemas dentro del condominio.",
         icon: "⚠️",
       },
 
-      // 🔥 SPRINT 4 - NUEVO MÓDULO
+      // 🔥 SPRINT 4
       {
         href: "/reservas",
         title: "Reservas de áreas",
         description: "Permite gestionar la reserva de espacios comunes.",
         icon: "📅",
+      },
+
+      // 🔥 SPRINT 5 (NUEVO)
+      {
+        href: "/comunicados",
+        title: "Comunicados",
+        description: "Permite publicar avisos para los residentes.",
+        icon: "📢",
       },
     ],
     []
@@ -90,7 +99,8 @@ export default function DashboardPage() {
           <div>
             <h1 className="text-xl font-bold text-gray-800">CondoFácil</h1>
             <p className="text-sm text-gray-600">
-              Bienvenido, <span className="font-medium">{user.nombre}</span>{" "}
+              Bienvenido,{" "}
+              <span className="font-medium">{user.nombre}</span>{" "}
               <span className="text-gray-400">({user.rol})</span>
             </p>
           </div>
@@ -167,5 +177,3 @@ export default function DashboardPage() {
     </main>
   );
 }
-
-//update
